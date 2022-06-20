@@ -77,6 +77,7 @@ let andre: { name: string } = { name: 'Andre' };
 //Criação de novos tipos
 
 //type
+//Type e suas funções
 //? utilizado para colocar propriedades dinamicas
 type Human = {
   name: string;
@@ -86,10 +87,19 @@ type Human = {
 let kohaute: Human = { name: 'kohaute' };
 kohaute.name = 'Kohaute';
 kohaute.age = 23;
+
 //multiple types
+//é possivel criar tipos , sempre começar ocm letra maiuscula quando for criar um novo conforme o exemplo, é possivel utilizar diversos tipos diferentes dependendo da necessidade
+type Id =   number | string | undefined
+
+let idTable: Id = "12345"
+let idUser:Id  = 12345
+let idProduct: Id = undefined
+
 //defined values
 //intercecção
 
 //interface
 
 //?
+//readonly
