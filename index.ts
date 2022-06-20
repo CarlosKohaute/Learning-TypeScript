@@ -56,6 +56,13 @@ let empty2: null = null;
 
 // void (vazio)
 //Situação ao qual exite um retorno. Porém um retorno vazio.
+function logName(name: string):void{
+  console.log(name)
+}
+//um exemplo de função que não tem retorno, ou se fosse colocado um""return" vazio no final
+
+//never
+//Situação  ao qual nunca exite um retorno
 
 //object
 
