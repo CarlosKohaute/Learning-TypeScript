@@ -63,6 +63,10 @@ function logName(name: string):void{
 
 //never
 //Situação  ao qual nunca exite um retorno
+function error():never{
+  throw "Erro"
+}
+//Quando uma função retorna somente throws é utilizad o never, é o único cenário que o never é utilizado
 
 //object
 
