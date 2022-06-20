@@ -25,24 +25,25 @@ function funcao2(name: string): string {
 
 //Types
 // boolean(true/false)
-let result: boolean = true
-let result2: boolean = false
-//Boolean aceitam somente true ou falso 
+let result: boolean = true;
+let result2: boolean = false;
+//Boolean aceitam somente true ou falso
 
 //string("blue",'blue, `Blue`)
-let animal: string = ``
-//pode ser usado todos os tipos de aspas ou strings, porém nada diferente pode ser utilziado 
+let animal: string = ``;
+//pode ser usado todos os tipos de aspas ou strings, porém nada diferente pode ser utilziado
 
 // Number(int, float, hex, binary)
-let age: number = 26
+let age: number = 26;
 //vai aceitar qualquer tipo de número, diferentemente do python, somente não vai aceitar 0 à esquerda
 
 //array(type[])
-let nameList: string[]  =[]
-nameList.push("Carlos")
-
+let nameList: string[] = [];
+nameList.push('Carlos');
 
 //tuple()
+let moduleList: [string, string, string] = ['M3', 'M4', 'M5'];
+//utilizada em valores imutaveis, uma vez declarados não podem ser alterados, então definir somente nesse cenário
 
 //any NÃO RECOMENDADO!!!!
 
