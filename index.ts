@@ -25,51 +25,54 @@ function funcao2(name: string): string {
 
 //Types
 // boolean(true/false)
-let result: boolean = true;
-let result2: boolean = false;
 //Boolean aceitam somente true ou falso
 
+let result: boolean = true;
+let result2: boolean = false;
+
 //string("blue",'blue, `Blue`)
-let animal: string = ``;
 //pode ser usado todos os tipos de aspas ou strings, porém nada diferente pode ser utilziado
+let animal: string = ``;
 
 // Number(int, float, hex, binary)
-let age: number = 26;
 //vai aceitar qualquer tipo de número, diferentemente do python, somente não vai aceitar 0 à esquerda
+let age: number = 26;
 
 //array(type[])
 let nameList: string[] = [];
 nameList.push('Carlos');
 
 //tuple()
-let moduleList: [string, string, string] = ['M3', 'M4', 'M5'];
 //utilizada em valores imutaveis, uma vez declarados não podem ser alterados, então definir somente nesse cenário
+let moduleList: [string, string, string] = ['M3', 'M4', 'M5'];
 
 //any NÃO RECOMENDADO!!!!
-let anything: any = ['Carlos', 26];
 //any literalmente deixa utilizar qualquer coisa, array, string, number function e etc...
+let anything: any = ['Carlos', 26];
 
 //null / undefined
+//quando utilizado somente vai ficar vazia ou repetindo o tipo igual o exemplo a seguir
 let empty: undefined = undefined;
 let empty2: null = null;
-//quando utilizado somente vai ficar vazia ou repetindo o tipo igual o exemplo acima
 
 // void (vazio)
 //Situação ao qual exite um retorno. Porém um retorno vazio.
+//um exemplo de função que não tem retorno, ou se fosse colocado um""return" vazio no final
 function logName(name: string):void{
   console.log(name)
 }
-//um exemplo de função que não tem retorno, ou se fosse colocado um""return" vazio no final
 
 //never
 //Situação  ao qual nunca exite um retorno
+//Quando uma função retorna somente throws é utilizad o never, é o único cenário que o never é utilizado
 function error():never{
   throw "Erro"
 }
-//Quando uma função retorna somente throws é utilizad o never, é o único cenário que o never é utilizado
 
 //object
 
 //type
 
 //multiple types
+//defined values
+//intercecção
