@@ -71,11 +71,25 @@ function error(): never {
 
 //object(diretamente)
 //aceita somente os valores já existentes na criação do objeto, não permite alterações posteriores
-let carlos: object = { name: "Carlos"};
-let andre: {name:string} = {name:"Andre"}
+let carlos: object = { name: 'Carlos' };
+let andre: { name: string } = { name: 'Andre' };
+
+//Criação de novos tipos
 
 //type
+//? utilizado para colocar propriedades dinamicas
+type Human = {
+  name: string;
+  age?: number;
+};
 
+let kohaute: Human = { name: 'kohaute' };
+kohaute.name = 'Kohaute';
+kohaute.age = 23;
 //multiple types
 //defined values
 //intercecção
+
+//interface
+
+//?
