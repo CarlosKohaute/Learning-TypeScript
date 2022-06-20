@@ -1,0 +1,22 @@
+{
+  "name": "teste",
+  "version": "1.0.0",
+  "description": "repositorio somente para testes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlosKohaute/teste.git"
+  },
+  "author": "Carlos Kohaute",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarlosKohaute/teste/issues"
+  },
+  "homepage": "https://github.com/CarlosKohaute/teste#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
