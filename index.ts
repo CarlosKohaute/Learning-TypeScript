@@ -46,10 +46,13 @@ let moduleList: [string, string, string] = ['M3', 'M4', 'M5'];
 //utilizada em valores imutaveis, uma vez declarados não podem ser alterados, então definir somente nesse cenário
 
 //any NÃO RECOMENDADO!!!!
-let anything: any = ["Carlos", 26]
+let anything: any = ['Carlos', 26];
 //any literalmente deixa utilizar qualquer coisa, array, string, number function e etc...
 
 //null / undefined
+let empty: undefined = undefined;
+let empty2: null = null;
+//quando utilizado somente vai ficar vazia ou repetindo o tipo igual o exemplo acima
 
 // void (vazio)
 //Situação ao qual exite um retorno. Porém um retorno vazio.
