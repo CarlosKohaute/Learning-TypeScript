@@ -58,18 +58,21 @@ let empty2: null = null;
 // void (vazio)
 //Situação ao qual exite um retorno. Porém um retorno vazio.
 //um exemplo de função que não tem retorno, ou se fosse colocado um""return" vazio no final
-function logName(name: string):void{
-  console.log(name)
+function logName(name: string): void {
+  console.log(name);
 }
 
 //never
 //Situação  ao qual nunca exite um retorno
 //Quando uma função retorna somente throws é utilizad o never, é o único cenário que o never é utilizado
-function error():never{
-  throw "Erro"
+function error(): never {
+  throw 'Erro';
 }
 
-//object
+//object(diretamente)
+//aceita somente os valores já existentes na criação do objeto, não permite alterações posteriores
+let carlos: object = { name: "Carlos"};
+let andre: {name:string} = {name:"Andre"}
 
 //type
 
