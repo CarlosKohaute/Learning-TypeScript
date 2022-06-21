@@ -90,16 +90,27 @@ kohaute.age = 23;
 
 //multiple types
 //é possivel criar tipos , sempre começar ocm letra maiuscula quando for criar um novo conforme o exemplo, é possivel utilizar diversos tipos diferentes dependendo da necessidade
-type Id =   number | string | undefined
+type Id = number | string | undefined;
 
-let idTable: Id = "12345"
-let idUser:Id  = 12345
-let idProduct: Id = undefined
+let idTable: Id = '12345';
+let idUser: Id = 12345;
+let idProduct: Id = undefined;
 
-//defined values
+//pre defined values
+//Assim poderá ser passado somente algum dos seguintes valores que foram pré definidos
+type OS = 'Windows' | 'MacOS' | 'Ubuntu';
+let pc: OS="MacOS"
 //intercecção
 
 //interface
 
 //?
 //readonly
+//extends
+
+//decorators
+
+//Class Decorator
+
+//Property Decorator
+console.log('hello');
