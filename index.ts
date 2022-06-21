@@ -171,19 +171,45 @@ let berethor: Character = {
   experience: 0,
 };
 
-interface Hunter extends Character{
+interface Hunter extends Character {
   have_bow: boolean;
 }
 
 let legolas: Hunter = {
-  name: 'Berethor',
+  name: 'Legolas',
   lvl: 1,
   experience: 0,
   have_bow: true,
 };
 
 //decorators
+//Provavelmente vou criar somente quando for pleno ou senior, atualmente somente aprender a utilizar os já prontos
+//necessário descomentar     // "experimentalDecorators": true,     // "emitDecoratorMetadata": true,    no tsconfig
+//São funções que podem ser  utilizadas antes da chamada de determinados recursos.
 
 //Class Decorator
+
+// class Orc {
+  //   level: number;
+  //   experience: number;
+  // //necessário declarar dentro da função e antes do constructior
+  //   // constructor(level: number = 1, experience: number = 0) {
+  //     constructor(){
+  //     this.level = 1;
+  //     this.experience = 0;
+  //   }
+  // }
+function AddBasicProperties(constructor: any){
+return class extends constructor{
+  level = 1
+experience = 0
+} 
+}
+
+@AddBasicProperties
+class Orc{}
+let orcChief = new Orc()
+console.log(orcChief)
+
 
 //Property Decorator
