@@ -140,25 +140,47 @@ let uno: Car = {
 //Não é possivel fazer TIPOS MULTIPLOS, NEM OS PRÉ DEFINIDOS com uma interface,
 // apenas nos valores internos do objeto dela
 //interface Id2 = string | number | undefined
-interface Id2 {
-}
+interface Id2 {}
 // Ela sempre representará um objeto, igual acima
 
 //Interface - readonly(exclusivo da interface)
 //readonly: o nome declarado nunca irá mudar
-interface Pet{
-  readonly name: string,
-  age: number
+interface Pet {
+  readonly name: string;
+  age: number;
 }
 
 let dog: Pet = {
-  name: "Thor",
-  age: 6
-}
+  name: 'Thor',
+  age: 6,
+};
 //dog.name="Apolo" << ERRO
 //dog.age=7 << SUCESSO
 
 //Interface -  extends
+// conforme exemplo, ele extende as informações, semelhante ao que foi feito na intercecção, a interface funcionca somente com o extends, então se for type utilizar XXXX = XXX & e se for interface utilizar extends
+interface Character {
+  name: string;
+  lvl: number;
+  experience: number;
+}
+
+let berethor: Character = {
+  name: 'Berethor',
+  lvl: 1,
+  experience: 0,
+};
+
+interface Hunter extends Character{
+  have_bow: boolean;
+}
+
+let legolas: Hunter = {
+  name: 'Berethor',
+  lvl: 1,
+  experience: 0,
+  have_bow: true,
+};
 
 //decorators
 
