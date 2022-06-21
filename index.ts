@@ -190,26 +190,45 @@ let legolas: Hunter = {
 //Class Decorator
 
 // class Orc {
-  //   level: number;
-  //   experience: number;
-  // //necessário declarar dentro da função e antes do constructior
-  //   // constructor(level: number = 1, experience: number = 0) {
-  //     constructor(){
-  //     this.level = 1;
-  //     this.experience = 0;
-  //   }
-  // }
-function AddBasicProperties(constructor: any){
-return class extends constructor{
-  level = 1
-experience = 0
-} 
+//   level: number;
+//   experience: number;
+// //necessário declarar dentro da função e antes do constructior
+//   // constructor(level: number = 1, experience: number = 0) {
+//     constructor(){
+//     this.level = 1;
+//     this.experience = 0;
+//   }
+// }
+function AddBasicProperties(constructor: any) {
+  return class extends constructor {
+    level = 1;
+    experience = 0;
+  };
 }
 
 @AddBasicProperties
-class Orc{}
-let orcChief = new Orc()
-console.log(orcChief)
-
+class Orc {}
+let orcChief = new Orc();
+console.log(orcChief);
 
 //Property Decorator
+
+function LogPropertyCreation(target: Dog, key: string) {
+  console.log(`Property ${key} created`);
+}
+
+class Dog {
+  @LogPropertyCreation
+  name: string;
+
+  @LogPropertyCreation
+  age: number;
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+let doggo = new Dog('Doggo', 5);
+console.log(doggo);
+console.log(doggo.name);
