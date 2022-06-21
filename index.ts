@@ -88,7 +88,7 @@ let kohaute: Human = { name: 'kohaute' };
 kohaute.name = 'Kohaute';
 kohaute.age = 23;
 
-//multiple types
+//Type - multiple types
 //é possivel criar tipos , sempre começar ocm letra maiuscula quando for criar um novo conforme o exemplo, é possivel utilizar diversos tipos diferentes dependendo da necessidade
 type Id = number | string | undefined;
 
@@ -96,17 +96,37 @@ let idTable: Id = '12345';
 let idUser: Id = 12345;
 let idProduct: Id = undefined;
 
-//pre defined values
+//Type -pre defined values
 //Assim poderá ser passado somente algum dos seguintes valores que foram pré definidos
 type OS = 'Windows' | 'MacOS' | 'Ubuntu';
-let pc: OS="MacOS"
-//intercecção
+let pc: OS = 'MacOS';
+
+//Type - intercecção
+type Person = {
+  name: string;
+  gender: 'M' | 'F';
+  health_points: number;
+};
+let aragorn: Person = {
+  name: 'Aragorn',
+  gender: 'M',
+  health_points: 100,
+};
+
+type Magician = Person & {
+  mana_points: number;
+};
+let gandalf: Person & Magician = {
+  name: 'Gandalf',
+  gender: 'M',
+  health_points: 100,
+  mana_points: 100,
+};
 
 //interface
 
-//?
-//readonly
-//extends
+//Interface - readonly
+//Interface -  extends
 
 //decorators
 
