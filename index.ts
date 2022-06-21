@@ -124,8 +124,40 @@ let gandalf: Person & Magician = {
 };
 
 //interface
+//declaração normal igual ao type, somente não é necessário o =
+interface Car {
+  model: string;
+  brand: string;
+  year: number;
+  plate?: string;
+}
+let uno: Car = {
+  model: 'Uno',
+  brand: 'Fiat',
+  year: 1998,
+  plate: 'III1234',
+};
+//Não é possivel fazer TIPOS MULTIPLOS, NEM OS PRÉ DEFINIDOS com uma interface,
+// apenas nos valores internos do objeto dela
+//interface Id2 = string | number | undefined
+interface Id2 {
+}
+// Ela sempre representará um objeto, igual acima
 
-//Interface - readonly
+//Interface - readonly(exclusivo da interface)
+//readonly: o nome declarado nunca irá mudar
+interface Pet{
+  readonly name: string,
+  age: number
+}
+
+let dog: Pet = {
+  name: "Thor",
+  age: 6
+}
+//dog.name="Apolo" << ERRO
+//dog.age=7 << SUCESSO
+
 //Interface -  extends
 
 //decorators
@@ -133,4 +165,3 @@ let gandalf: Person & Magician = {
 //Class Decorator
 
 //Property Decorator
-console.log('hello');
